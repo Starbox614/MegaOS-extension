@@ -138,7 +138,7 @@ SnapExtensions.primitives.set(
         }
     
     world.worldCanvas.focus();
-  };
+  ))))))))))))))))))))))))};
   
 );
 
