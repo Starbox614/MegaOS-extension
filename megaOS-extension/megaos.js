@@ -124,6 +124,43 @@ iframes[i].style.zIndex = -1
 );
 
 
+SnapExtensions.primitives.set(
+  'iframe_runProject(iframe)',
+  function (iframe) {
+        let world = iframe.contentWindow.world,
+        let ide = world.children[0];
+     
+        ide.stage.threads.pauseCustomHatBlocks = false;
+        ide.runScripts();
+        if (ide.embedOverlay) {
+            ide.embedOverlay.destroy();
+            ide.embedPlayButton.destroy();
+        }
+    
+    world.worldCanvas.focus();
+  };
+  
+);
+
+
+SnapExtensions.primitives.set(
+  'iframe_stopProject(iframe)',
+  function () {
+   
+}
+  }
+);
+
+
+SnapExtensions.primitives.set(
+  'iframe_pauseProject(iframe)',
+  function () {
+   
+}
+  }
+);
+
+
 // I got this from @ego-lay_atman-bay
 
 /* (original comment)
