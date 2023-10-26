@@ -127,7 +127,7 @@ iframes[i].style.zIndex = -1
 SnapExtensions.primitives.set(
   'iframe_runProject(iframe)',
   function (iframe) {
-        let world = iframe.contentWindow.world,
+        let world = iframe.contentWindow.world;
         let ide = world.children[0];
      
         ide.stage.threads.pauseCustomHatBlocks = false;
