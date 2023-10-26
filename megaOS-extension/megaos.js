@@ -142,7 +142,7 @@ SnapExtensions.primitives.set(
   
 );
 
-
+/*
 SnapExtensions.primitives.set(
   'iframe_stopProject(iframe)',
   function () {
@@ -159,7 +159,7 @@ SnapExtensions.primitives.set(
 }
   }
 );
-
+*/
 
 // I got this from @ego-lay_atman-bay
 
