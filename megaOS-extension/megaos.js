@@ -140,6 +140,13 @@ SnapExtensions.primitives.set(
     world.worldCanvas.focus();
   });
 
+SnapExtensions.primitives.set(
+  'get_PresentationMode',
+  function () {
+        let ide = world.children[0];
+    return ide.isAppMode;
+})
+
 /*
 SnapExtensions.primitives.set(
   'iframe_stopProject(iframe)',
