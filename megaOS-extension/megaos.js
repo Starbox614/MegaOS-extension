@@ -143,7 +143,7 @@ SnapExtensions.primitives.set(
 SnapExtensions.primitives.set(
   'Starbx_getMySize',
   function () {
-   return (new List([this.width(), this.height()]));
+   return(new List([this.width(), this.height()]));
 }
   }
 );
@@ -151,7 +151,7 @@ SnapExtensions.primitives.set(
 SnapExtensions.primitives.set(
   'Starbx_getMyPos',
   function () {
-   return (new List([this.position().x, this.position().y]));
+   return(new List([this.position().x, this.position().y]));
 }
   }
 );
