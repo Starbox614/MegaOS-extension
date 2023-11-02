@@ -141,11 +141,20 @@ SnapExtensions.primitives.set(
   });
 
 SnapExtensions.primitives.set(
-  'get_PresentationMode',
+  'Starbx_getMySize',
   function () {
-        let ide = world.children[0];
-    return ide.isAppMode;
-})
+   return (new List([this.width(), this.height()]));
+}
+  }
+);
+
+SnapExtensions.primitives.set(
+  'Starbx_getMyPos',
+  function () {
+   return (new List([this.position().x, this.position().y]));
+}
+  }
+);
 
 /*
 SnapExtensions.primitives.set(
