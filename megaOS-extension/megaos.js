@@ -145,7 +145,6 @@ SnapExtensions.primitives.set(
   function () {
    return(new List([this.width(), this.height()]));
 }
-  }
 );
 
 SnapExtensions.primitives.set(
@@ -153,7 +152,6 @@ SnapExtensions.primitives.set(
   function () {
    return(new List([this.position().x, this.position().y]));
 }
-  }
 );
 
 /*
