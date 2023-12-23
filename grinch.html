@@ -98,7 +98,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="The Grinch" startnode="1" creator="Twine" creator-version="2.8.0" format="SugarCube" format-version="2.36.1" ifid="D0DBDA13-AE2E-4CD8-A9A6-1703FF2C3E9A" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body {
+	<tw-storydata name="The Grinch" startnode="1" creator="Twine" creator-version="2.8.0" format="SugarCube" format-version="2.36.1" ifid="D0DBDA13-AE2E-4CD8-A9A6-1703FF2C3E9A" options="" tags="" zoom="0.3" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body {
   background-color: white;
   color: black;
 }
@@ -1093,7 +1093,6 @@ You feel the sleigh start moving again. &lt;&lt;addclass &quot;#getoutlink&quot;
 
 &lt;&lt;link &quot;empty a bag&quot; `&quot;house 3:turn &quot; + (1 - $timeSaved)`&gt;&gt;&lt;&lt;/link&gt;&gt;
 [[Go back to your house]]
-&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;else&gt;&gt;.
 
@@ -1257,7 +1256,8 @@ You&#39;re greeted by your &lt;&lt;= $spouseTitle&gt;&gt;, &quot;So what did you
 &lt;&lt;if $stuffRescued &lt; 12&gt;&gt;[[I rescued a few presents]]&lt;&lt;elseif $stuffRescued &lt; 18&gt;&gt;[[I rescued some presents from him]]&lt;&lt;elseif $stuffRescued &lt; 36&gt;&gt;[[I rescued a bunch of presents from him]]&lt;&lt;else&gt;&gt;[[I rescued most of the presents from him]]&lt;&lt;/if&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;else&gt;&gt;
-[[Go pick up the presents you rescued]]</tw-passagedata><tw-passagedata pid="126" name="house 4:turn 0" tags="" position="3375,5100" size="100,100">You empty a bag and fill it with sticks and stones.
+[[Go pick up the presents you rescued]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="126" name="house 4:turn 0" tags="" position="3375,5100" size="100,100">You empty a bag and fill it with sticks and stones.
 
 [[empty another bag|house 4:turn 1]]
 [[hide|house 4:hide]]
