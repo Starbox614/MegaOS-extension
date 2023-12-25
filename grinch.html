@@ -483,7 +483,7 @@ $spouseSubjectPronoun kisses you.
 [[get up|wake up]]
 [[go back to sleep]]</tw-passagedata><tw-passagedata pid="26" name="go back to sleep" tags="" position="600,1700" size="100,100">It&#39;s probably just the mouse. You go back to sleep.
 
-[[next|Christmas morning]]</tw-passagedata><tw-passagedata pid="27" name="wake up" tags="" position="1075,1325" size="100,100">You get out of bed.
+[[next|Christmas morning]]</tw-passagedata><tw-passagedata pid="27" name="wake up" tags="" position="1075,1325" size="100,100">You get out of bed. &lt;&lt;set $grinchTitle = &quot;the intruder&quot;&gt;&gt;
 
 Your room is very dark, but the light is on in the living room. You can hear someone moving around.
 
@@ -496,7 +496,7 @@ Suddenly you hear the intruder in the other room stop moving.
 
 [[grab a weapon]]
 [[peek out the doorway]] </tw-passagedata><tw-passagedata pid="29" name="peek out the doorway" tags="" position="1425,1375" size="100,100">You peek out the door and see a tall guy in a Santa Claus costume.
-But it&#39;s not Santa, It&#39;s the Grinch who lives north of town! &lt;&lt;set $knowsAboutGrinch = true&gt;&gt;
+But it&#39;s not Santa, It&#39;s the Grinch who lives north of town! &lt;&lt;set $knowsAboutGrinch = true&gt;&gt;&lt;&lt;set $grinchTitle = &quot;the Grinch&quot;&gt;&gt;
 &lt;&lt;if $roomLightOn&gt;&gt;
 [[What is he doing in your house?|Grinch Runs Away]]
 &lt;&lt;else&gt;&gt;
@@ -557,7 +557,7 @@ Cindy Lou looks shocked that you&#39;re awake.
 
 [[say something|Rush out:say something]]
 [[Stand in front of her]]
-&lt;&lt;if $weapon == &quot;pillow&quot;&gt;&gt;&lt;&lt;link `&quot;attack &quot; + $GrinchTItle` &quot;attack the Grinch with pillow&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;elseif $weapon neq &quot;none&quot;&gt;&gt;&lt;&lt;link `&quot;attack the &quot; + $grinchTItle` &quot;attack the Grinch&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/if&gt;&gt; /*[[attack the Grinch]][[attack the Grinch with pillow]]*/ 
+&lt;&lt;if $weapon == &quot;pillow&quot;&gt;&gt;&lt;&lt;link `&quot;attack &quot; + $GrinchTItle` &quot;attack the Grinch with pillow&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;elseif $weapon neq &quot;none&quot;&gt;&gt;&lt;&lt;link `&quot;attack &quot; + $grinchTItle` &quot;attack the Grinch&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/if&gt;&gt; /*[[attack the Grinch]][[attack the Grinch with pillow]]*/ 
 </tw-passagedata><tw-passagedata pid="34" name="stay put" tags="" position="2475,1600" size="100,100">The Grinch has been caught by your tiny &lt;i&gt;Who&lt;/i&gt; daughter, Who got out of bed for a cup of cold water. 
 &lt;&lt;timed 6s t8n&gt;&gt;She stares at the Grinch and says, &quot;Santy Claus, why, &lt;i&gt;Why&lt;/i&gt; are you taking our Christmas tree? WHY?&quot;
 &lt;&lt;next 6s&gt;&gt;
@@ -951,7 +951,7 @@ Another bag comes up the chimney.
 [[hide|hide on the ground]]
 [[climb into the sleigh]] 
 &lt;&lt;set $stuffRescued += 3&gt;&gt;</tw-passagedata><tw-passagedata pid="92" name="Go to the next house" tags="" position="3125,3150" size="100,100">You run to the next house and climb onto the roof.
-&lt;&lt;if $weapon == lamp&gt;&gt;You notice a power plug on the side of the house&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $weapon == &quot;lamp&quot;&gt;&gt;You notice a power plug on the side of the house&lt;&lt;/if&gt;&gt;
 &lt;&lt;set $lampOn = false&gt;&gt;
 [[empty a bag|house 2:turn 1]]
 &lt;&lt;if $weapon == lamp&gt;&gt;[[plug in your lamp]]&lt;&lt;/if&gt;&gt;
