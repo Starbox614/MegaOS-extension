@@ -98,7 +98,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="The Grinch" startnode="1" creator="Twine" creator-version="2.8.0" format="SugarCube" format-version="2.36.1" ifid="D0DBDA13-AE2E-4CD8-A9A6-1703FF2C3E9A" options="" tags="" zoom="0.3" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body {
+	<tw-storydata name="The Grinch" startnode="1" creator="Twine" creator-version="2.8.0" format="SugarCube" format-version="2.36.1" ifid="D0DBDA13-AE2E-4CD8-A9A6-1703FF2C3E9A" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body {
   background-color: white;
   color: black;
 }
@@ -402,7 +402,8 @@ Style:
 &lt;&lt;link &quot;done&quot; &quot;your bedroom&quot;&gt;&gt;
 &lt;&lt;if _hairLength &gt; 12&gt;&gt;&lt;&lt;set _hairDesc = &quot;long&quot;&gt;&gt;&lt;&lt;elseif _hairLength &lt; 7&gt;&gt;&lt;&lt;set _hairDesc = &quot;short&quot;&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set _hairDesc = &quot;medium&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
 
-&lt;&lt;set $looksDescription = &quot;You have &quot; + _hairDesc + &quot; &quot; + _hairStyle + &quot; hair, and &quot; + _eyeColor + &quot; eyes.&quot;&gt;&gt;
+&lt;&lt;if $hairLength == 0&gt;&gt;&lt;&lt;set $looksDescription = &quot;You have &quot; + no + &quot; hair, and &quot; + _eyeColor + &quot; eyes.&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;set $setLooks = true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $looksDescription = &quot;You have &quot; + _hairDesc + &quot; &quot; + _hairStyle + &quot; hair, and &quot; + _eyeColor + &quot; eyes.&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;set $setLooks = true&gt;&gt;
 &lt;&lt;/link&gt;&gt;
 
@@ -456,9 +457,8 @@ Did you die or something?
 
 $spouseSubjectPronoun kisses you. 
 
-&lt;&lt;type 40ms element &quot;span&quot; none&gt;&gt;
+
 &quot;Good night. Do you need my lamp off?&quot;
-&lt;&lt;/type&gt;&gt;
 
 [[yes|good night:yes]] [[no|good night:no]]
 </tw-passagedata><tw-passagedata pid="21" name="talk to spouse:what reading:interesting" tags="" position="200,925" size="100,100">&quot;Sounds interesting&quot;
@@ -476,9 +476,7 @@ $spouseSubjectPronoun kisses you.
 [[Well, Good night|talk to spouse:good night]]
 </tw-passagedata><tw-passagedata pid="23" name="good night:no" tags="" position="300,1200" size="100,100">&quot;Ok&quot;
 
-[[go to sleep|sleep]]</tw-passagedata><tw-passagedata pid="24" name="good night:yes" tags="" position="450,1300" size="100,100">&lt;&lt;type 40ms element &quot;span&quot; none&gt;&gt;
-&quot;Ok I&#39;ll turn it off then&quot;
-&lt;&lt;/type&gt;&gt;
+[[go to sleep|sleep]]</tw-passagedata><tw-passagedata pid="24" name="good night:yes" tags="" position="450,1300" size="100,100">&quot;Ok I&#39;ll turn it off then&quot;
 
 [[go to sleep|sleep]]</tw-passagedata><tw-passagedata pid="25" name="sounds in the night" tags="" position="700,1325" size="100,100">Suddenly you get woken up by a strange noise coming from the living room.
 
