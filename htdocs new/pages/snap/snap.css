@@ -1,0 +1,62 @@
+
+a {
+  color: #0f5;
+  position: relative;
+  transition: 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #aff;
+  top: -2px;
+  filter: brightness(120%)
+}
+
+
+body {
+  background-color: rgb(20, 20, 20);
+  color: #0ff;
+  font-family: helvetica, arial, sans-serif;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  position: static;
+}
+
+h2 {
+  text-align: center;
+}
+
+.title {
+display: block;
+}
+
+.flextable {
+    display: flex;
+    justify-content: center;
+}
+
+.tableitem {
+padding-left: 10px;
+padding-right: 10px;
+}
+
+#thepage {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+
+a#backbutton {
+    position: relative;
+    left: 0;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.sticktoleft {
+    position: absolute;
+    left: 0;
+}

@@ -1,0 +1,73 @@
+a {
+  color: #0f5;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #aff;
+  top: -2px;
+}
+
+body {
+  background-color: rgb(20, 20, 20);
+  color: #0ff;
+  font-family: helvetica, arial, sans-serif;
+}
+
+p {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.topnav {
+    cursor: pointer;
+    text-decoration: underline;
+    padding-left: 14px;
+    padding-right: 14 px;
+}
+
+.contentbox {
+  text-align: center;
+  padding: 10px;
+  background-color: #001011;
+  border-radius: 10px;
+  line-height: 1;
+}
+
+.selected{
+    color: #0a0
+}
+
+a.selected:hover {
+  color: #0a0;
+  top: -2px;
+}
+
+#thepage {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.title {
+display: block;
+}
+
+.flextable {
+    display: flex;
+    justify-content: center;
+}
+
+.tableitem {
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.nav {
+    margin: 0;
+    padding-bottom: 5px;
+}

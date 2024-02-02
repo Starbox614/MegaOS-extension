@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Embedded Snap!</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="https://snap.berkeley.edu/snap/src/morphic.js"></script>
+        <script>
+            var world;
+            window.onload = function () {
+                var ide = new IDE_Morph({ /* configurations dictionary ...*/ }),
+                    loop = () => {
+                        requestAnimationFrame(loop);
+                        world.doOneCycle();
+                    };
+                world = new WorldMorph(document.getElementById('world'), false); // don't fill
+                ide.openIn(world);
+                requestAnimationFrame(loop);
+            };
+        </script>
+    </head>
+    <body>
+        <canvas id="world" tabindex="1" width="500" height="300"></canvas>
+    </body>
+</html>
