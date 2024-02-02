@@ -16,14 +16,6 @@ body {
   font-family: helvetica, arial, sans-serif;
 }
 
-p {
-  text-align: center;
-}
-
-h2 {
-  text-align: center;
-}
-
 .topnav {
     cursor: pointer;
     text-decoration: underline;
